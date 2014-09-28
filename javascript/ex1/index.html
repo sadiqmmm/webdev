@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning Javascript</title>
+	<style type="text/css">
+     #circle {
+	     width: 200px;
+	     height: 200px;
+	     border-radius: 100px;
+	     background: red;
+     }
+	</style>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<button onclick="prog_lang();">Click me</button>
+  
+  <button id="myButton">You know want to click me</button><br />
+  <button id="myButton2">change text</button>
+  
+  <input type="text" id="txtbox" />
+  <p id="text">Some text</p>
+  
+  <div id="circle">
+  	
+  </div>
+
+  <script type="text/javascript">
+
+  var c = "circle";
+
+  var txt = document.getElementById('txtbox').value;
+
+
+
+     document.getElementById('myButton').onclick=function() {
+        document.getElementById('myButton').innerHTML= "This is awesome";
+      }
+
+      document.getElementById(c).onclick=function() {
+        document.getElementById(c).style.display="none";
+      }
+
+      document.getElementById("txtbox").onkeyup=function() {
+
+        txt = document.getElementById('txtbox').value;
+        document.getElementById('text').innerHTML = txt;
+      }
+  </script>
+</body>
+</html>
